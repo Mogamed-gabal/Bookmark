@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css"></head>
+<body>
+    <div class=" container my-5 position-relative ">
+        <h3 class="my-5 px-3">
+            Bookmarker
+        </h3>
+       <div class="form border-top border-bottom my-4 text-center " id="book-container">
+        <div class="form-labels m-4">
+            <h4 class="my-3">Bookmark your favorite sites</h4>
+            <label for="Name">Site Name</label>
+            <input type="text" name="Name" id="Name" placeholder="Bookmark Name" class="w-100 form-control">
+            <div class="alert bg-danger p-2 my-2 d-none" id="name-alert">
+                Name is required
+            </div>
+            <label for="URL">Site URL</label>
+            <input type="text" name="URL" id="URL" placeholder="WebSite URL" class="w-100 form-control">
+            <div class="alert bg-danger p-2 my-2 d-none" id="url-alert">Url Field is required</div>
+            <button class="btn btn-light p-2 my-4" id="Sbmit">Submit</button>
+            <input oninput="searchBook(this.value)" type="text" id="search" placeholder="Search by name" class="shadow-lg  w-100 form-control border-0 border-bottom p-2 w-50">
+
+       </div>
+    </div>
+    <div class="counter " ><p id="nom"></p></div>
+    <p class="my-3">© 2019 Bookmarker Inc.</p>
+            <div class="row my-2 border-top gx-5 "id="container" >
+             
+            </div>
+            
+    </div>
+    
+    <script src="main.js" ></script>
+</body>
+</html>
